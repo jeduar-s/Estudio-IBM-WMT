@@ -1,36 +1,83 @@
 # Estudio de Correlación entre IBM y Walmart
 
-Este repositorio contiene un análisis sobre la correlación entre los precios de las acciones de IBM y Walmart, utilizando técnicas de análisis de series temporales.
+## Objetivo
+Analizar la relación entre los precios de las acciones de IBM y Walmart utilizando análisis de series temporales, con el fin de evaluar su grado de correlación y comportamiento conjunto en el tiempo.
 
-## Descripción del Proyecto
-El objetivo de este estudio es analizar la relación entre los precios de las acciones de IBM y Walmart para identificar patrones comunes y evaluar su grado de correlación. Se emplean herramientas de análisis estadístico y visualizaciones para obtener conclusiones significativas.
+---
 
-## Contenido
-- **Notebook:** `estudio de IBM y WMT.ipynb` con el análisis completo.
-- **Datos:** Se espera que los datos de las acciones sean obtenidos de fuentes financieras como Yahoo Finance o similares.
+## Tabla de Contenidos
+- [Introducción](#introducción)  
+- [Fuente de Datos](#fuente-de-datos)  
+- [Análisis de Correlación](#análisis-de-correlación)  
+- [Series Temporales](#series-temporales)  
+- [Conclusiones](#conclusiones)  
+- [Requisitos](#requisitos)  
+- [Uso](#uso)  
+- [Contribuciones](#contribuciones)  
+- [Autor](#autor)
+
+---
+
+## Introducción
+El estudio busca determinar si existe una relación significativa entre el comportamiento de las acciones de IBM y Walmart, lo cual podría tener implicaciones para estrategias de inversión o diversificación de portafolios.
+
+---
+
+## Fuente de Datos
+- **Origen:** Yahoo Finance u otras fuentes financieras confiables.
+- **Símbolos analizados:** `IBM` y `WMT`.
+- **Periodo sugerido:** Diario o mensual entre 2015 y 2024 (según disponibilidad de datos).
+
+---
+
+## Análisis de Correlación
+Se aplican las siguientes técnicas:
+- Cálculo del coeficiente de correlación de Pearson.
+- Visualización de precios históricos.
+- Análisis de dispersión entre precios de ambas acciones.
+
+---
+
+## Series Temporales
+- Descomposición de series para identificar tendencias, estacionalidad y ruido.
+- Análisis cruzado para comparar comportamiento temporal.
+- Discusión sobre posibles causas de similitudes en la evolución de precios.
+
+---
+
+## Conclusiones
+- **Correlación:** Se observa una correlación positiva de aproximadamente **0.9274** entre ambas series.
+- **Patrones comunes:** Ambas acciones tienden a moverse de forma similar, aunque operan en industrias diferentes.
+- **Diferencias clave:** Las mayores diferencias se observan en la volatilidad y volumen de transacciones.
+
+---
 
 ## Requisitos
-Para ejecutar el análisis, asegúrate de tener instalados los siguientes paquetes de Python:
 
 ```bash
 pip install pandas numpy matplotlib seaborn statsmodels yfinance
 ```
 
-## Uso
-Para ejecutar el análisis, abre el notebook en Jupyter Notebook o Google Colab y sigue las instrucciones dentro del documento.
+---
 
+## Uso
+1. Clona este repositorio:
+```bash
+git clone https://github.com/tu_usuario/ibm-walmart-correlacion.git
+```
+2. Abre el notebook:
 ```bash
 jupyter notebook "estudio de IBM y WMT.ipynb"
 ```
+3. Ejecuta las celdas para descargar los datos, visualizar los resultados y calcular la correlación.
 
-## Conclusiones
-- Existe una correlación positiva de aproximadamente 0.9274 entre los precios de las acciones de IBM y Walmart.
-- En general, cuando el precio de una acción sube, la otra tiende a seguir un patrón similar.
-- La descomposición de series temporales muestra que ambas acciones tienen comportamientos muy similares, con diferencias principalmente en el volumen de transacciones.
+---
 
 ## Contribuciones
-Las contribuciones son bienvenidas. Si deseas mejorar el análisis o agregar nuevas funcionalidades, puedes hacer un fork del repositorio y enviar un pull request.
+¿Deseas mejorar el análisis incluyendo más empresas, técnicas avanzadas de cointegración o predicción?  
+¡Tus aportes son bienvenidos! Abre un issue o envía un pull request.
 
-**Autor:** Jose Eduardo Saucedo Martinez
+---
 
-
+## Autor
+**José Eduardo Saucedo Martínez**  
